@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+     <!--写法 -->
+    <style>
+     
+            /* import 需要写在style里面,放在最顶部 */
+       /* @import url("./style.css"); */
+       .first{
+        border: 10px solid red;
+       }
+       .second{
+        border:10px solid green;
+        height:40px;
+        padding:5px;
+       }
+       .out{
+        color:blue;
+       }
+       *{
+        color:aqua;
+       }
+       #id-test{
+        color:brown;
+       }
+       p{
+        color:aquamarine;
+       }
+   
+       div >p{
+        color:yellow;
+       }
+       h1~p{
+color:pink;
+}
+
+    </style>
+    <!-- <link rel="stylesheet" href="./style.css"> -->
+</head>
+<body>
+    <!-- <div class="first" class="out"  >类选择器</div> -->
+    <!-- <div class="out">外部渲染</div> -->
+    <p class="first" >盒子</p>
+    <div class="second">盒子2号</div>
+    <div>
+
+        <p>第一层级</p>
+        <span><p>第二层级</p></span>
+    </div>
+
+<p>兄弟3</p> 
+<h1>我是h1</h1>
+<p>兄弟1</p>
+<p>兄弟2</p>
+
+
+</body>
+</html>
