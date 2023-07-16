@@ -6,24 +6,37 @@
     <title>Document</title>
     <style>
         .where{
-            position: relative;
-            top:100px;
+            position: sticky;
+            top: 10px;
             background-color: cadetblue;
             width: 100px;
             height: 100px;
+            margin: 0px;
+            border:0px;
+            padding: 0px;
         }
         .container{
             border: 10px solid red;
             margin: 10px;
             height: 400px;
-          
+          position:relative;
+          overflow-y: scroll;
+        }
+        .test{
+            height: 600px;
+            background-color: aquamarine;
+            overflow: visible;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="where">测试内容</div>
-        <div>测试内容2</div>
+        <div class="test">
+            <div class="where">测试内容</div>
+            <div>测试内容2</div>
+
+        </div>
+       
     </div>
 </body>
 </html>
